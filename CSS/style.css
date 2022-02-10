@@ -1,0 +1,286 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+input {
+  display: none;
+}
+
+.header {
+  width: 100%;
+  height: 599px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  position: relative;
+}
+
+.show-hide {
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  z-index: 70;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.show-hide h3 {
+  font-size: 17px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.show-hide .span-show {
+  color: rgb(78, 6, 112);
+  margin-right: 5px;
+  font-size: 25px;
+}
+
+.show-hide .span-hide {
+  color: rgb(92, 4, 4);
+  margin-left: 5px;
+  font-size: 25px;
+}
+
+.show-hide-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.show-hide-label label {
+  letter-spacing: 1.5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 570;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+
+#w5:checked ~ .header > .show-hide > .show-hide-label label:hover {
+  box-shadow: 0 2px 15px #000;
+}
+
+.show-hide-label label:nth-of-type(1) {
+  background-color: rgb(81, 98, 126);
+  padding: 8px 20px;
+  border-radius: 7px;
+}
+
+.show-hide-label label:hover {
+  box-shadow: 0 2px 15px #fff;
+}
+
+.show-hide-label label:nth-of-type(2) {
+  background-color: rgb(107, 7, 99);
+  padding: 8px 20px;
+  border-radius: 7px;
+}
+
+
+
+.block {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  /* box-shadow: 0 5px 10px 10px #2f9cd3; */
+  z-index: 50;
+}
+
+#w1:checked ~ .header > .block {
+  box-shadow: 3px 7px 45px #000;
+  transition: 0.3s ease-in-out;
+}
+
+#w2:checked ~ .header > .block {
+  box-shadow: 3px 7px 45px #000;
+  transition: 0.3s ease-in-out;
+}
+
+#w3:checked ~ .header > .block {
+  box-shadow: 3px 7px 45px #000;
+  transition: 0.3s ease-in-out;
+}
+
+#w4:checked ~ .header > .block {
+  box-shadow: 3px 7px 45px #000;
+  transition: 0.3s ease-in-out;
+}
+
+#w5:checked ~ .header > .block {
+  box-shadow: 3px 7px 45px #000;
+  transition: 0.3s ease-in-out;
+}
+
+.block-img {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.block-img div {
+  width: 100%;
+  height: 100%;
+}
+
+.label-div {
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  align-items: center;
+  width: 450px;
+  left: 34%;
+  bottom: 5%;
+}
+
+.label-div label {
+  width: 75px;
+  height: 65px;
+  border-radius: 7px;
+  background-color: #000043;
+  cursor: pointer;
+  box-shadow: 0 10px 20px blue ;
+}
+
+#hide:checked ~ .header > .show-hide > .show-hide-label > label:hover {
+  box-shadow: 0 2px 15px #000;
+}
+
+.label-div label:hover {
+  box-shadow: 0 10px 27px #000;
+  transform: scale(1.1);
+  transition: 0.1s ease-in-out;
+}
+
+.label-div label:nth-of-type(1) {
+  background-image: url(https://wallpaperaccess.com/full/1631875.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.label-div label:nth-of-type(2) {
+  background-image: url(https://miro.medium.com/max/2000/1*H0IBb9kvGI3eIuL1sGmWug.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.label-div label:nth-of-type(3) {
+  background-image: url(http://apprand.com/wp-naughtycontent/uploads/2015/08/maxresdefault.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.label-div label:nth-of-type(4) {
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/645/96/47/python-programming-programming-programming-language-code-hd-wallpaper-preview.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.label-div label:nth-of-type(5) {
+  background-image: url(https://www.wallpapertip.com/wmimgs/31-312270_html-css-javascript-png.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.block-img img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#w1:checked ~ .header > .block > .block-img div:nth-of-type(1) {
+  transform: translateX(0);
+  transition: 0.3s ease-in-out;
+}
+
+#w2:checked ~ .header > .block > .block-img div:nth-of-type(2) {
+  transform: translateX(-100%);
+  transition: 0.3s ease-in-out;
+}
+
+#w3:checked ~ .header > .block > .block-img div:nth-of-type(3) {
+  transform: translateX(-200%);
+  transition: 0.3s ease-in-out;
+}
+
+#w4:checked ~ .header > .block > .block-img div:nth-of-type(4) {
+  transform: translateX(-300%);
+  transition: 0.3s ease-in-out;
+}
+
+#w5:checked ~ .header > .block > .block-img div:nth-of-type(5) {
+  transform: translateX(-400%);
+  transition: 0.3s ease-in-out;
+}
+
+#w1:checked ~ .header {
+  background-image: url(https://wallpaperaccess.com/full/1631875.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+}
+#w2:checked ~ .header {
+  background-image: url(https://miro.medium.com/max/2000/1*H0IBb9kvGI3eIuL1sGmWug.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+}
+#w3:checked ~ .header {
+  background-image: url(http://apprand.com/wp-naughtycontent/uploads/2015/08/maxresdefault.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+}
+#w4:checked ~ .header {
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/645/96/47/python-programming-programming-programming-language-code-hd-wallpaper-preview.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+}
+#w5:checked ~ .header {
+  background-image: url(https://www.wallpapertip.com/wmimgs/31-312270_html-css-javascript-png.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+}
+
+#show:checked ~ .header > .block {
+  transform: translatey(0);
+  transition: 0.4s linear;
+} 
+
+#hide:checked ~ .header > .block {
+  transform: translatey(-150%);
+  transition: 0.4s linear;
+} 
+
+#hide ~ .header .show-hide h3 {
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
